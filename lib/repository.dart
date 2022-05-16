@@ -2,8 +2,7 @@ import 'package:http/http.dart' as http;
 import 'dart:convert';
 
 Future<List<Data>> fetchData() async {
-  const url =
-      'http://192.168.100.19/APIs/flutter_php_mysql_crud_shajedul/read.php';
+  const url = 'http://seu_ip/APIs/flutter_php_mysql_crud_shajedul/read.php';
   final response = await http.get(Uri.parse(url));
   if (response.statusCode == 200) {
     List jsonResponse = json.decode(response.body);

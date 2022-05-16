@@ -34,8 +34,7 @@ class _AddEditPageState extends State<AddEditPage> {
 
   addUpdateData() async {
     if (editMode) {
-      var url =
-          'http://192.168.100.19/APIs/flutter_php_mysql_crud_shajedul/edit.php';
+      var url = 'http://sue_ip/APIs/flutter_php_mysql_crud_shajedul/edit.php';
       await http.post(Uri.parse(url), body: {
         'id': widget.id,
         'firstname': firstName.text,
@@ -44,8 +43,7 @@ class _AddEditPageState extends State<AddEditPage> {
         'address': address.text,
       });
     } else {
-      var url =
-          'http://192.168.100.19/APIs/flutter_php_mysql_crud_shajedul/add.php';
+      var url = 'http://sue_ip/APIs/flutter_php_mysql_crud_shajedul/add.php';
       await http.post(Uri.parse(url), body: {
         'firstname': firstName.text,
         'lastname': lastName.text,

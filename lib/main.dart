@@ -93,7 +93,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           onTap: () {
                             setState(() {
                               var url =
-                                  'http://192.168.100.19/APIs/flutter_php_mysql_crud_shajedul/delete.php';
+                                  'http://seu_ip/APIs/flutter_php_mysql_crud_shajedul/delete.php';
                               http.post(Uri.parse(url), body: {
                                 'id': data[index].id,
                               });
